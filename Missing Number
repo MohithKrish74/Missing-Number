@@ -1,0 +1,31 @@
+package com.company;
+
+import com.sun.jdi.Value;
+import org.w3c.dom.ls.LSOutput;
+
+import java.security.spec.RSAOtherPrimeInfo;
+import java.util.*;
+
+public class Main {
+    public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.println("Enter 9 elements from 1 to 10 ");
+        ArrayList<Integer>list=new ArrayList<Integer>();
+        for(int i=0;i<9;i++)
+        {
+            list.add(in.nextInt());
+        }
+        int original_sum=(10*(10+1))/2;
+        int sum=0;
+        for(Integer k:list)
+        {
+            sum+=k;
+        }
+        System.out.println("User List is "+list);
+        System.out.println("The missing number is "+(original_sum-sum));
+
+
+    }
+}
+
